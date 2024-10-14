@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Prihlás sa na odber noviniek</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        overflow: hidden; /* Skryje posuvník */
+        background: rgb(202, 202, 202, 0.9); /* Priehľadné pozadie */
+        background-size: cover; /* Upraví veľkosť obrázka */
+        background-position: center; /* Umiestnenie obrázka */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Celá výška obrazovky */
+      }
+      .signup-form {
+        background-image: url("IMG_1845.jpg"); /* Nahradíš názov obrázku */
+        
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 90%; /* Šírka pre mobilné zariadenia */
+        max-width: 400px; /* Maximálna šírka formulára */
+      }
+      h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #c8c8c8;
+      }
+      input[type="email"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+      input[type="email"]:focus {
+        border-color: #007bff; /* Zmena farby okraja pri zameraní */
+      }
+      input[type="submit"] {
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background 0.3s;
+      }
+      input[type="submit"]:hover {
+        background: #0056b3; /* Zmena farby pozadia pri hover */
+      }
+      .form-footer {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #555;
+      }
+      /* Media query pre väčšie obrazovky */
+      @media (min-width: 600px) {
+        .signup-form {
+          padding: 60px; /* Viac paddingu pre väčšie obrazovky */
+        }
+        h2 {
+          font-size: 28px; /* Väčší nadpis na väčších obrazovkách */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-form">
+      <h2>Prihlás sa, nech máš prehľad</h2>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKMEnu1oRohb0mo64Dnfx7S_22qR0tJ8ep9jD5REP-CIkcpQ/formResponse"
+        method="post"
+      >
+        <input
+          type="email"
+          name="entry.534564544"
+          placeholder="Zadaj svoj e-mail"
+          required
+        />
+        <input type="submit" value="Skús" />
+      </form>
+    </div>
+  </body>
+</html>
