@@ -2,10 +2,7 @@
 <html lang="sk">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prihlás sa na odber noviniek</title>
     <style>
       body {
@@ -21,14 +18,14 @@
         height: 100vh; /* Celá výška obrazovky */
       }
       .signup-form {
-        background-image: url("https://github.com/BlairsGallery/index.html/blob/main/IMG_1845.jpg?raw=true"); /* Nahradíš názov obrázku */
-        
+        background-image: url("IMG_1845.jpg"); /* Nahradíš názov obrázku */
         padding: 40px;
         border-radius: 10px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         text-align: center;
         width: 90%; /* Šírka pre mobilné zariadenia */
         max-width: 400px; /* Maximálna šírka formulára */
+        position: relative; /* Umožňuje absolútne umiestnenie dieťaťa */
       }
       h2 {
         margin-bottom: 20px;
@@ -64,6 +61,14 @@
         font-size: 14px;
         color: #555;
       }
+      .logo {
+        position: absolute; /* Absolútne umiestnenie */
+        top: -50px; /* Umiestnenie nad formulár */
+        left: 50%;
+        transform: translateX(-50%); /* Centerovanie horizontálne */
+        width: 100px; /* Šírka loga */
+        height: auto; /* Udržuje pomer strán */
+      }
       /* Media query pre väčšie obrazovky */
       @media (min-width: 600px) {
         .signup-form {
@@ -77,6 +82,7 @@
   </head>
   <body>
     <div class="signup-form">
+      <img src="Asset 3BG black.transp.2.svg" alt="Logo" class="logo" /> <!-- Vlož svoje SVG logo -->
       <h2>Prihlás sa, nech máš prehľad</h2>
       <form
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKMEnu1oRohb0mo64Dnfx7S_22qR0tJ8ep9jD5REP-CIkcpQ/formResponse"
